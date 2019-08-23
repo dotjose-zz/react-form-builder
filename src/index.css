@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.dynamic-delete-button {
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  font-size: 24px;
+  color: #999;
+  transition: all .3s;
+}
+.dynamic-delete-button:hover, p {
+  color: #777;
+}
+.dynamic-delete-button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.to-center {
+  display: table-cell;
+  vertical-align: middle;
+  text-align:center;
+}
+.action-wrapper {
+  position:absolute; 
+  height:100%; 
+  width:100%;
+  display: table;
+}
+
+.heading-paragraph {
+  white-space: pre-wrap;
+  line-height: 135%;
+  margin-top: 22px;
+  font-size: 13px;
+}
+
+.heading-text {
+  box-sizing: border-box;
+  font-size: 34px;
+  line-height: 135%;
+  max-width: 100%;
+  min-width: 0%;
+}
+
+.header-section {
+  margin-bottom: 22px;
+}
+
+ul.option-list li {
+  list-style: none;
+}
+.add-option {
+  cursor: pointer;
+  color: #1890ff;
+  z-index: 5;
+}
+
+ul.option-list .ant-form-item {
+  display:inline-block;
+}
+
+ul.option-list .ant-form-item-control-wrapper {
+  margin-left: 10px!important;
+  margin-top: -5px!important;
+}
+
+ul.option-list input[type='radio'], ul.option-list input[type='checkbox'] { 
+  transform: scale(2);
+}
+
+.remove-option {
+  cursor: pointer;
+  float: right;
+  z-index: 5;
+}
+
+.ant-checkbox-wrapper + .ant-checkbox-wrapper {
+  margin-left: 0px !important
+}
+
+.sidebar-btn {
+  top: 25% !important;
+}
